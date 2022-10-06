@@ -1,0 +1,396 @@
+$alice-reg-font: "Alice-Regular";
+@font-face {
+  font-family: "BikhamCyrScript";
+  src: url("../fonts/bikham-cyr-script_[allfont.net].ttf");
+}
+
+body {
+  main {
+    .restaurant-umami-image-title {
+      height: 973px;
+      background-image: url("../images/restaurant-main-background.png");
+      .container {
+        .row {
+          .restaurant-image {
+            height: 580px;
+            width: 100%;
+            background-image: url("../images/Man-Ho-Back-Hall.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+
+            .blur-restaurant-row {
+              font-family: "Alice-regular";
+              font-size: 120px;
+              text-transform: uppercase;
+              text-align: center;
+              line-height: 100px;
+              position: relative;
+              width: 100%;
+              background-color: rgb(65, 52, 42, 0.73);
+
+              p {
+                padding: 0;
+                margin: 0;
+              }
+              .restaurant-p {
+                color: #ffffff;
+              }
+              .umami-p {
+                color: #f1a66f;
+              }
+            }
+          }
+        }
+      }
+    }
+    .restaurant-description-meal-images {
+      background-color: #ffffff;
+      margin: 0 auto;
+      max-width: 1040px;
+      position: absolute;
+      left: 50%;
+      margin-left: -520px;
+      top: 680px;
+
+      .container {
+        .restaurant-description {
+          padding: 0 174px;
+          font-family: "Alice-regular";
+          font-size: 30px;
+          text-align: center;
+          .col {
+            p {
+              padding: 15px 0;
+            }
+            img {
+              padding-bottom: 30px;
+            }
+          }
+        }
+        .meal-four-images {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .restaurant-menu-wrapper {
+      background-color: #41342a;
+      height: 900px;
+      padding: 170px 0;
+
+      .restaurant-menu {
+        background-color: #41342a;
+        background: url("../images/chineese-symbols-background.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 685px;
+        .container {
+          .row {
+            .col {
+              text-align: center;
+              .menu-button {
+                width: 180px;
+                font-family: "Alice-regular";
+                background-color: #ac9788;
+                border: 1px solid #707070;
+                border-radius: 3px;
+                font-size: 30px;
+                color: #ffffff;
+              }
+              .menu-title-image {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: 25px;
+                .title {
+                  position: absolute;
+                  p {
+                    color: #ffffff;
+                    font-size: 200px;
+                    text-transform: uppercase;
+                    font-family: "Alice-regular";
+                  }
+                }
+                .image-border {
+                  border: 3px solid #5b5148;
+                  border-radius: 50%;
+                  padding: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .reserve-table {
+      .reserve-text {
+        margin: 50px 90px;
+        text-align: center;
+        padding: 0 153px;
+        .title {
+          font-size: 56px;
+          font-family: "Alice-regular";
+        }
+        .content {
+          font-size: 24px;
+          font-family: "Alice-regular";
+        }
+      }
+    }
+    .reserve-title-form {
+      margin-top: 50px;
+      padding-top: 30px;
+      text-align: center;
+      background: url("../images/diagonal-background-smallimgs.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 1412px;
+      .container {
+        form {
+          fieldset {
+            max-width: 828px;
+            height: 524px;
+            margin: 0px auto;
+            margin-top: 70px;
+            margin-bottom: 40px;
+            background-color: #ffffff;
+
+            border: 1px solid #ac9788;
+            .column-wrapper {
+              display: flex;
+              justify-content: center;
+            }
+            .left-side-inputs {
+              margin-left: 27px;
+              margin-right: 35px;
+            }
+            .right-side-inputs {
+              margin-left: 35px;
+              margin-right: 27px;
+              .plus-minus-buttons-wrapper {
+                display: flex;
+                align-items: center;
+                .button {
+                  display: inline-flex;
+                  height: 40px;
+                  width: 40px;
+                  background-color: #ac9788;
+                  border: 1px solid #ac9788;
+                  justify-content: center;
+                  align-items: center;
+                  i {
+                    color: #ffffff;
+                  }
+                }
+              }
+            }
+            legend {
+              color: #ffffff;
+              background-color: #ac9788;
+              font-size: 56px;
+              font-family: "Alice-regular";
+            }
+            label {
+              margin-top: 25px;
+              text-align: left;
+              display: block;
+              font-size: 24px;
+              font-family: "Alice-regular";
+              color: #41342a;
+              width: -webkit-fill-available;
+            }
+            input {
+              color: #b58156;
+              font-size: 24px;
+              font-family: "Alice-regular";
+              width: -webkit-fill-available;
+
+              display: block;
+              border: 1px solid #ac9788;
+            }
+            select {
+              color: #b58156;
+              font-size: 20px;
+              font-family: "Alice-regular";
+              border: 1px solid #ac9788;
+              display: block;
+              height: 44px;
+              width: -webkit-fill-available;
+              background: url("../images/expand-button-down.png") no-repeat 100%
+                center;
+              -moz-appearance: none;
+              -webkit-appearance: none;
+              appearance: none;
+            }
+
+            input[type="submit"] {
+              color: #ffffff;
+              background-color: #ac9788;
+              height: 8vh;
+              width: 70%;
+              margin-top: 20px;
+              text-transform: uppercase;
+            }
+            input[type="number"] {
+              width: 25%;
+              -webkit-appearance: textfield;
+              -moz-appearance: textfield;
+              appearance: textfield;
+              text-align: center;
+              color: #b58156;
+            }
+
+            input[type="number"]::-webkit-inner-spin-button,
+            input[type="number"]::-webkit-outer-spin-button {
+              -webkit-appearance: none;
+            }
+            input[type="date"]::-webkit-inner-spin-button,
+            input[type="date"]::-webkit-calendar-picker-indicator {
+              -webkit-appearance: none;
+              background: url("../images/Icon\ awesome-calendar-alt.svg ")
+                no-repeat;
+              margin-right: 5px;
+            }
+
+            input[type="time"] {
+              -webkit-appearance: none;
+            }
+
+            input[type="time"]::-webkit-inner-spin-button,
+            input[type="time"]::-webkit-calendar-picker-indicator {
+              color: #b58156;
+              background: url("../images/input-clock.svg");
+              background-repeat: no-repeat;
+
+              margin-right: 5px;
+            }
+          }
+        }
+        .tables-background {
+          margin: 0px auto;
+          width: 828px;
+          height: 774px;
+          background-image: url("../images/restaurant-schema-background.PNG");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+    .three-images-restaurant {
+      display: flex;
+      max-width: 1920px;
+      max-height: fit-content;
+      height: 465px;
+
+      .red-wine-img {
+        width: 590px;
+        height: 465px;
+        background: url(../images/glasses-red-white-wine.png);
+        background-repeat: no-repeat;
+      }
+      .restaurant-view-img {
+        width: 620px;
+        height: 465px;
+        background: url(../images/Nautika_restaurant_800_x600.png);
+        background-repeat: no-repeat;
+        // background-size: cover;
+      }
+      .woman-eat-pasta-img {
+        width: 710px;
+        height: 465px;
+        background: url(../images/young-woman-eating-pasta-cafe.png);
+        background-repeat: no-repeat;
+        object-fit: cover;
+      }
+    }
+    .master-chefs {
+      .chefs-title {
+        text-align: center;
+        margin-top: 30px;
+        h2 {
+          font-family: "Alice-regular";
+          font-size: 56px;
+          color: #41342a;
+        }
+      }
+      .container {
+        .row {
+          .col {
+            .chef-circle-image {
+              display: flex;
+              justify-content: center;
+              margin-top: 40px;
+
+              article {
+                text-align: center;
+                .chef-img {
+                  width: 466px;
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  height: 466px;
+                  margin-left: 30px;
+                  margin-right: 30px;
+                  border: 34px solid #b58156;
+                  border-radius: 50%;
+                }
+                .male {
+                  background: url("../images/chef-mate.png");
+                  background-repeat: no-repeat;
+                }
+                .female {
+                  background: url("../images/chef-female.png");
+                  background-repeat: no-repeat;
+                }
+
+                h3 {
+                  font-size: 30px;
+                  font-family: "Alice-Regular";
+                  color: #41342a;
+                }
+                .chef-name-underline {
+                  border: 1px solid #b58156;
+                  width: 175px;
+                  height: 11px;
+                  display: inline-block;
+                  border-radius: 10px;
+                  background-color: #b58156;
+                }
+
+                p {
+                  max-width: 402px;
+                  font-family: "Alice-Regular";
+                  color: #b58156;
+                  font-size: 18px;
+                  margin: 0px auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .end-of-page-border-title {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      .end-top-border {
+        width: 686px;
+        height: 132px;
+        border-top: 5px solid #41342a;
+        margin-top: 105px;
+        margin-bottom: 75px;
+        padding-top: 75px;
+        h3 {
+          font-family: "BikhamCyrScript";
+          font-size: 58px;
+          color: #f2a66f;
+        }
+      }
+    }
+  }
+}

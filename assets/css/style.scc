@@ -1,0 +1,126 @@
+@import url(fonts.css);
+@font-face {
+  font-family: Alice-Regular;
+  src: url(../fonts/Alice-Regular.ttf);
+}
+header {
+  /* display: flex; */
+  max-width: 1920px;
+  background-color: #41342b;
+}
+header .container nav {
+  display: flex;
+}
+header .container nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  margin: 30px 0;
+}
+header .container nav ul li {
+  margin: 0px 15px;
+  padding: 0px;
+  text-decoration: none;
+  color: rgb(176, 8, 8);
+  height: fit-content;
+  font-size: 24px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header .container nav ul li img {
+  height: 20px;
+  margin-bottom: 5px;
+}
+header .container nav ul li a {
+  text-decoration: none;
+  color: #fffffa;
+  /* padding: 5px; */
+}
+header .container nav ul li a:hover {
+  color: #fffffa;
+}
+header .container nav ul .logo-img {
+  margin: 0 35px;
+}
+header .container nav ul .profile-icon-text {
+  padding: 5px 3px;
+}
+header .container nav ul .profile-icon-text:hover {
+  border-radius: 15px;
+  background-color: orange;
+}
+
+header nav {
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.werapper-rooms-and-apartments {
+  max-width: 1920px;
+  box-sizing: border-box;
+  /** veertical border */
+  /** rooms-and-apartments */
+}
+.werapper-rooms-and-apartments .rooms-and-apartments-title {
+  height: 127px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(65, 52, 43);
+}
+.werapper-rooms-and-apartments .rooms-and-apartments-title p {
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-family: Alice-Regular;
+  font-size: 56px;
+}
+.werapper-rooms-and-apartments .wrapper-vertical-border {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 2px;
+  margin-bottom: 22px;
+}
+.werapper-rooms-and-apartments .wrapper-vertical-border .vertical-border {
+  border-left: 9px solid rgb(173, 151, 136);
+  height: 70px;
+  margin-top: 20px;
+}
+.werapper-rooms-and-apartments .wrapper-rooms {
+  widows: 100%;
+  display: flex;
+  position: relative;
+  padding: 0px 332px 0px 332px;
+  padding-bottom: 146px;
+}
+.werapper-rooms-and-apartments .wrapper-rooms p {
+  position: absolute;
+  font-size: 22px;
+  font-weight: bolder;
+  margin: 13px 0px 0px 21px;
+}
+.werapper-rooms-and-apartments .wrapper-rooms .room-number-border {
+  width: 45px;
+  border: 2px solid black;
+  position: absolute;
+  top: 12px;
+}
+.werapper-rooms-and-apartments .wrapper-rooms .rooms {
+  height: 422px;
+  margin-left: 30px;
+  transition: transform 0.3s;
+}
+.werapper-rooms-and-apartments .wrapper-rooms :link {
+  color: rgb(0, 0, 0);
+}
+.werapper-rooms-and-apartments .wrapper-rooms :visited {
+  color: rgb(0, 0, 0);
+}
+.werapper-rooms-and-apartments .wrapper-rooms :hover {
+  transform: scale(1.01);
+  filter: blur(2px);
+}
+
+/*# sourceMappingURL=style.scc.map */

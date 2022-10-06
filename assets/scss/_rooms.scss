@@ -1,0 +1,47 @@
+.container {
+    .wellcome-photo {
+        background-image: url(../images/luxury-bedroom-suite.png);
+        height: 410px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-size: 96px;
+            font-family: "BikhamCyrScript";
+            color: rgb(255, 255, 255);
+        }
+    }
+    .moonlight-beckground {
+        background-image: url(../images/moonlight.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 180px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 700px;
+        .wrapper-rooms-window {
+            margin: 0 auto;
+            width: 1040px;
+            height: 725px;
+            box-sizing: border-box;
+            border: 1px solid red;
+            position: absolute;
+            left: 0px;
+            right: 0px;
+            top: -200px;
+            z-index: 1;
+            background-color: white;
+            // maybe you must delete -->background-color: white; and remove border red when you ready!
+        }
+    }
+    form {
+        .details {
+            background-color: greenyellow;
+            //! wait api
+        }
+    }
+} //container

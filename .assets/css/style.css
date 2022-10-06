@@ -1,0 +1,11 @@
+.gallery-main .h2-img {
+  max-height: 770px;
+  display: flex;
+  position: relative;
+}
+.gallery-main .moonlight-gallery-hotel-spa {
+  position: absolute;
+  z-index: 3;
+}
+
+/*# sourceMappingURL=style.css.map */

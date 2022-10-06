@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="description" content="Moonlight Hotel" />
+  <meta name="keywords" content="HTML, CSS, JavaScript" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Moonlight Hotel</title>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <!-- Navigation bar - Todor -->
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navigation-bar">
+          <ul class="nav-bar-list">
+            <li>Началo</li>
+            <li>
+              <!-- <i class="fa-solid fa-user-large"></i> -->
+              <a href="./pages/about-us.html" title="about-us">За Нас</a>
+            </li>
+            <li>
+              <a href="./pages/gallery.html" title="gallery">Галерия</a>
+            </li>
+            <li>
+              <a href="./pages/contacts.html" title="contacts">Контакти</a>
+            </li>
+            <img src="./assets/images/logo.svg" class="logo-img" />
+            <li>
+              <a href="./pages/rooms.html" title="rooms">Стаи</a>
+            </li>
+            <li>
+              <a href="./pages/bar.html" title="bar">Бар</a>
+            </li>
+            <li>
+              <a href="./pages/restaurant.html" title="restaurant">Ресторант</a>
+            </li>
+            <li>
+              <a href="./pages/transfer.html" title="transfer">Трансфер</a>
+            </li>
+            <li>
+              <a href="./pages/profile.html" title="profile" class="profile-btn">
+                <img src="./assets/images/Icon open-person.svg" alt="person" />
+                Профил
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- End of Navigation bar -->
+    <main>
+      <!-- slide-part -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-indicators">
+          <button id="button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+            class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button id="button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+            aria-label="Slide 2"></button>
+          <button id="button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+            aria-label="Slide 3"></button>
+          <button id="button" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+            aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div id="photo-conteiner" class="carousel-item active">
+            <div class="slide-content">
+              <div id="wrapper-slide-content">
+                <div class="border-content"></div>
+                <p class="slide-content-title">Наслада за душата</p>
+                <p class="hotel-name">moonlight</p>
+                <p class="hotel-spa">Hotel & Spa</p>
+              </div>
+              <div class="reservation">
+                <form action="#" method="POST">
+                  <div>
+                    <div>
+                      <label class="label-calendar" for="incoming">Пристигане</label>
+                    </div>
+                    <input class="reservation-calendar" type="date" name="incoming" id="incoming">
+                  </div>
+                  <div>
+                    <div>
+                      <label class="label-calendar" for="departure">Заминаване</label>
+                    </div>
+                    <input class="reservation-calendar" type="date" name="departure" id="departure">
+                  </div>
+                  <div>
+                    <div>
+                      <label class="adult" for="adults">Възрастни</label>
+                    </div>
+                    <input class="persons" type="number" name="adults" id="adults">
+                  </div>
+                  <div>
+                    <div>
+                      <label class="child" for="kids">Деца</label>
+                    </div>
+                    <input class="persons" type="number" name="kids" id="kids">
+                  </div>
+                  <div>
+                    <input id="submit" type="submit" value="Резервирай">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <img src="./assets/images/landing page cover.png" class="d-block w-100" alt="slide-img">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/landing page cover.png" class="d-block w-100" alt="slide-img">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/landing page cover.png" class="d-block w-100" alt="slide-img">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/images/landing page cover.png" class="d-block w-100" alt="slide-img">
+          </div>
+        </div>
+      </div>
+      <!-- tsevti part -->
+      <main>
+        <div class="container">
+          <div class="pool-img">
+            <div class="img-and-header">
+              <img src="assets/images/pool.png" alt="Pool" />
+              <h2 class="hotel">ЗА ХОТЕЛА</h2>
+            </div>
+            <section class="hotel-description">
+              <div class="moonlight-hotel-description">
+                <p>
+                  Хотел Moonlight Hotel & Spa е разположен покрай крайбрежието на
+                  красива Варна. Очарователна гледка, лек бриз и мирис на море
+                  вдъхновяват за едно незабравимо изживяване. В обширната територия
+                  от открити и закрити басейни и СПА зона може да се намери място за
+                  всеки вкус, възраст и настроение. <br />
+                  Очакваме Ви за една пълноценна почивка!
+                </p>
+              </div>
+              <div class="general-manager">
+                <h3>S. Yovcheva</h3>
+                <p>Генерален мениджър</p>
+              </div>
+            </section>
+          </div>
+        </div>
+        <!-- Part two tsveti -->
+        <div class="row">
+          <div class="col-md side-bar-one"></div>
+          <div class="col-md-5 pool">
+            <img src="assets/images/sunbeds.png" alt="Sunbeds" />
+            <div class="pool-paragraph">
+              <h2>СПА</h2>
+              <p>
+                Възстановяване на тялото и ума, подобряване на настроението и
+                укрепване на организма са нашата мисия. Модерният ни СПА център
+                предлага възможности за почивка и възстановяване чрез лечебните
+                свойства на минералната вода.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-5 spa">
+            <div class="spa-paragraph">
+              <h2>БАСЕЙНИ</h2>
+              <p>
+                На Ваше разположение са 2 големи открити минерални басейна, 2
+                открити джакузита, 1 детски басейн и един голям вътрешен баасейн с
+                минерална вода.
+              </p>
+            </div>
+            <img src="assets/images/spa.png" alt="Spa" />
+          </div>
+          <div class="col-md side-bar-two"></div>
+        </div>
+        <!--    -->
+        <div class="space-between-parts"></div>
+        <!-- Nikiiii -->
+        <section class="werapper-rooms-and-apartments">
+          <article class="rooms-and-apartments-title">
+            <p>стаи & апартаменти</p>
+          </article>
+          <article class="wrapper-vertical-border">
+            <div class="vertical-border"></div>
+          </article>
+          <article class="wrapper-rooms">
+            <a href="#">
+              <div class="rooms">
+                <div class="room-number">
+                  <p>
+                    01
+                    <span class="room-number-border"></span>
+                  </p>
+                  <img src="./assets/images/Mask-Group-37.png" alt="room-photo" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="rooms">
+                <div class="room-number">
+                  <p>
+                    02
+                    <span class="room-number-border"></span>
+                  </p>
+                  <img src="./assets/images/Mask-Group-38.png" alt="room-photo" />
+                </div>
+              </div>
+            </a>
+            <a href="#">
+              <div class="rooms">
+                <div class="room-number">
+                  <p>
+                    03
+                    <span class="room-number-border"></span>
+                  </p>
+                  <img src="./assets/images/Mask-Group-39.png" alt="room-photo" />
+                </div>
+              </div>
+            </a>
+          </article>
+        </section>
+        <!-- Restaurant and food  - Todor-->
+        <section class="wrapper-restaurant-and-food">
+
+          <div class="container">
+
+            <div class="restaurant-and-food-title">
+              <p>Ресторант & хранене</p>
+            </div>
+            <div class="wrapper-vertical-border">
+              <div class="vertical-border"></div>
+
+            </div>
+
+            <div class="restaurant-image">
+            </div>
+            <div class="hotel-offer-image-wrapper">
+              <article class="hotel-offer-text">
+                <div class="hotel-header-bottom-border">
+                  <h2>Хотела предлага</h2>
+                  <div class="header-underline"></div>
+                </div>
+                <p>Два ресторанта от които единия автентичен Японски ресторант с екзотична и нетрадиционна кухня и два
+                  дневни бара.</p>
+                <p>В традиционния ресторант можете да се възползвате от закуска и вечеря на блок маса включваща
+                  разнообразие
+                  от ястия подходящи, както за различни хранителни режими, така и за ценителите на изоблилието</p>
+                <button><span>Виж още</span></button>
+              </article>
+              <article class="shrimps-meal-image"></article>
+            </div>
+            <!-- for the bar ! same as before -->
+          </div>
+        </section>
+        <section class="wrapper-sport-bar">
+          <div class="container">
+            <div class="sport-bar-image-wrapper">
+              <article class="bar-image">
+              </article>
+              <article class="bar-description">
+                <p>
+                  Хотела предлага Спортен БАР , където можете да се насладите на любимите си мачове. Налични са три
+                  екрана
+                  на които се излъчва различен мач. Можете да резервирате и изберете желания от Вас мач. Насладете се на
+                  луксозен интериор, класни напитки и перфекто обслужване.
+                </p>
+                <button><span>Виж още</span></button>
+              </article>
+            </div>
+            <div class="soul-pleasure-border-line">
+            </div>
+            <div class="pleasure-header">
+              <h2>Наслада за душата</h2>
+            </div>
+          </div>
+          </div>
+        </section>
+        <!-- End of Restaurant and food -->
+      </main>
+      <footer>
+
+        <article class="logo">
+          <img src="./assets/images/logo.svg">
+        </article>
+        <article class="info">
+          <ul>
+            <li>
+              КОНТАКТИ:
+            </li>
+            <li>
+              тел: 0897 777 333
+            </li>
+            <li>
+              адрес: гр.Варна ул."Някоя си"22
+            </li>
+            <li>
+              moonlight_hotel&spa@gmail.com
+            </li>
+          </ul>
+        </article>
+        <article class="icon">
+          <ul>
+            <li class="fb"> <img src="./assets/images/Group 1060.svg" /> </li>
+            <li class="ig"> <img src="./assets/images/Group 1061.svg" /></li>
+
+          </ul>
+        </article>
+
+      </footer>
+      <script src=" ./assets/js/restaurantScript.js">
+      </script>
+  </body>
+
+</html>

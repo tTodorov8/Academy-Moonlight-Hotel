@@ -1,0 +1,752 @@
+@import "_rooms-and-apartments";
+@import "_restaurant";
+@import "_about-us";
+@import "_gallery";
+@import "_rooms";
+
+@font-face {
+  font-family: "Segoe UI";
+  src: url("../fonts/Segoe\ UI.ttf");
+}
+@font-face {
+  font-family: "BikhamCyrScript";
+  src: url("../fonts/bikham-cyr-script_[allfont.net].ttf");
+}
+// Header styling Todor ///////////////
+@font-face {
+  font-family: Alice-Regular;
+  src: url(../fonts/Alice-Regular.ttf);
+}
+@font-face {
+  font-family: AlexBrush-Regular;
+  src: url(../fonts/AlexBrush-Regular.ttf);
+}
+
+header {
+  /* display: flex; */
+  font-family: "Segoe UI";
+  background-color: #41342b;
+
+  nav {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    ul {
+      padding-inline-start: 0px;
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+
+      li {
+        text-decoration: none;
+        color: #b58156;
+        height: fit-content;
+        font-size: 24px;
+        margin: 0 15px;
+        padding-top: 15px;
+
+        img {
+          height: 20px;
+        }
+
+        a {
+          text-decoration: none;
+          color: #fffffa;
+        }
+        a:hover {
+          color: #fffffa;
+          border-bottom: 1px solid #b58156;
+          transition: 1s;
+        }
+        .profile-btn:hover {
+          background-color: #b58156;
+          border-radius: 5px;
+          border-bottom: none;
+          border: 0px solid transparent;
+        }
+      }
+
+      .logo-img {
+        margin: 0 35px;
+      }
+      .profile-icon-text {
+        padding: 5px 3px;
+      }
+      .profile-icon-text:hover {
+        border-radius: 15px;
+        background-color: #b58156;
+      }
+    }
+  }
+}
+
+// hotel-slide
+.carousel {
+  margin-bottom: 128px;
+  .carousel-indicators {
+    position: absolute;
+    top: 755px;
+    #button {
+      width: 29px;
+      height: 29px;
+      border-radius: 50%;
+    }
+  }
+}
+
+#photo-conteiner {
+  width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  position: relative;
+  .slide-content {
+    width: 100%;
+    height: 480px;
+    box-sizing: border-box;
+    background-color: rgb(65, 52, 43, 0.5);
+    position: absolute;
+    z-index: 2;
+    #wrapper-slide-content {
+      width: 100%;
+      height: 480px;
+      position: absolute;
+      z-index: 1;
+      .slide-content-title {
+        font-size: 96px;
+        color: rgb(242, 166, 111);
+        font-family: "BikhamCyrScript";
+        text-align: center;
+        padding-top: 10px;
+        position: relative;
+      }
+      .slide-content-title::before {
+        content: "";
+        position: absolute;
+        border: 2px solid rgb(252, 206, 173);
+        width: 400px;
+        top: 78px;
+        left: 222px;
+      }
+      .slide-content-title::after {
+        content: "";
+        position: absolute;
+        border: 2px solid rgb(252, 206, 173);
+        width: 400px;
+        top: 78px;
+        right: 220px;
+      }
+      .hotel-name {
+        font-size: 150px;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        text-align: center;
+        letter-spacing: 10px;
+        margin-top: -50px;
+      }
+      .hotel-spa {
+        color: white;
+        font-size: 90px;
+        text-align: center;
+        letter-spacing: 35px;
+        margin-top: -55px;
+      }
+      .hotel-spa::before {
+        content: "";
+        position: absolute;
+        border: 2px solid rgb(252, 206, 173);
+        width: 270px;
+        top: 383px;
+        left: 222px;
+      }
+      .hotel-spa::after {
+        content: "";
+        position: absolute;
+        border: 2px solid rgb(252, 206, 173);
+        width: 320px;
+        top: 383px;
+        right: 220px;
+      }
+    }
+    .border-content {
+      width: 1465px;
+      height: 309px;
+      position: absolute;
+      left: 221px;
+      top: 78px;
+      border-left: 3px solid rgb(252, 206, 173);
+      border-right: 3px solid rgb(252, 206, 173);
+    }
+    .reservation {
+      width: 100%;
+      height: 133px;
+      box-sizing: border-box;
+      background-color: rgb(65, 52, 43, 0.8);
+      position: absolute;
+      bottom: -242px;
+      font-family: "Alice-Regular";
+      #submit {
+        margin-top: 30px;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 20px;
+        div {
+          margin-left: 40px;
+          color: rgb(255, 255, 255);
+          font-size: 24px;
+          .label-calendar {
+            position: relative;
+            left: -18px;
+          }
+          .reservation-calendar {
+            width: 177px;
+            height: 57px;
+            background-image: url(../images/Icon\ awesome-calendar-alt.svg);
+            background-repeat: no-repeat;
+            background-position: 90%;
+          }
+          .reservation-calendar::-webkit-calendar-picker-indicator {
+            opacity: 0;
+          }
+          .persons {
+            width: 69px;
+            height: 57px;
+          }
+          .adult {
+            margin-left: -63px;
+          }
+          .child {
+            margin-left: -30px;
+          }
+          //todo input-number-button
+          input[type="number"]::-webkit-outer-spin-button,
+          input[type="number"]::-webkit-inner-spin-button {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            top: 0;
+            right: 5px;
+            height: 100%;
+            background-color: red;
+            // opacity: 0;
+          }
+          #submit {
+            width: 231px;
+            height: 58px;
+            box-sizing: border-box;
+            font-size: 34px;
+            color: rgb(255, 255, 255);
+            background-color: rgb(181, 129, 86);
+            border-radius: 11px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Tsvetina
+.container {
+  .pool-img {
+    grid-column: span 4;
+    .img-and-header {
+      padding: 27px 32px 44px 32px;
+      --b: 2px; /* Thickness of border */
+      --g: 290px; /* The gap */
+      --s: 75px; /* The offset of the gap */
+      --grad: #000 var(--s), transparent var(--s) calc(var(--s) + var(--g)),
+        #000 0;
+      box-sizing: border-box;
+      border-top: var(--b) solid;
+      border-right: var(--b) solid;
+      border-left: var(--b) solid;
+      background: linear-gradient(to right, var(--grad)) bottom;
+      background-size: 100% var(--b);
+      background-repeat: no-repeat;
+      position: relative;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      h2 {
+        font-size: 36px;
+        font-family: "Alice-Regular";
+        font-weight: normal;
+        margin: auto;
+        position: absolute;
+        margin-top: 15px;
+        margin-left: 127px;
+      }
+    }
+    .hotel-description {
+      display: flex;
+      grid-template-columns: 50% 50%;
+      .moonlight-hotel-description {
+        max-width: 608px;
+        height: 321px;
+        margin-top: 30px;
+        margin-left: 160px;
+        text-align: justify;
+        p {
+          color: #b58156;
+          font-size: 30px;
+          letter-spacing: 0px;
+          line-height: 29px;
+          font-family: "Alice-Regular";
+        }
+      }
+      .general-manager {
+        margin-left: 75px;
+        margin-top: 50px;
+        h3 {
+          font-family: "AlexBrush-Regular";
+          font-weight: normal;
+          font-size: 36px;
+          white-space: nowrap;
+          margin-top: 50px;
+        }
+        p {
+          font-size: 10px;
+          padding: 0;
+          margin-top: -20px;
+          text-align: right;
+          font-family: "Segoe UI";
+          color: #b58156;
+        }
+      }
+    }
+  }
+}
+.row {
+  .side-bar-one {
+    border-top-right-radius: 60px;
+    border-bottom-right-radius: 60px;
+    background-color: rgb(164, 140, 126);
+    width: 124px;
+  }
+  .pool {
+    margin-left: 100px;
+    img {
+      object-fit: fill;
+      width: 100%;
+    }
+    .pool-paragraph {
+      width: 550px;
+      height: 250px;
+      --b: 2px; /* Thickness of border */
+      --g: 508px;
+      --s: 38px; /* The offset of the gap */
+      --grad: #000 var(--s), transparent var(--s) calc(var(--s) + var(--g)),
+        #000 0;
+      border-bottom: var(--b) solid;
+      border-left: var(--b) solid;
+      background: linear-gradient(to right, var(--grad)) top;
+      background-size: 100% var(--b);
+      background-repeat: no-repeat;
+      margin-top: 30px;
+      position: relative;
+      padding-left: 30px;
+      padding-right: 50px;
+      padding-top: 30px;
+      font-family: "Alice-Regular";
+      p {
+        font-size: 24px;
+        color: #b58156;
+        line-height: 25px;
+        font-family: "Alice-Regular";
+      }
+      h2 {
+        position: absolute;
+        top: -20px;
+        left: 40px;
+        font-size: 36px;
+      }
+    }
+  }
+  .spa {
+    .spa-paragraph {
+      width: 530px;
+      height: 250px;
+      --b: 2px; /* Thickness of border */
+      --g: 250px; /* The gap */
+      --s: 0px; /* The offset of the gap */
+      --grad: #000 var(--s), transparent var(--s) calc(var(--s) + var(--g)),
+        #000 0;
+      border-bottom: var(--b) solid;
+      border-right: var(--b) solid;
+      background: linear-gradient(to right, var(--grad)) top;
+      background-size: 100% var(--b);
+      background-repeat: no-repeat;
+      padding-top: 30px;
+      padding-left: 30px;
+      padding-right: 140px;
+      margin-left: -25px;
+      text-align: left;
+      position: relative;
+      font-family: "Alice-Regular";
+      margin-top: 50px;
+      p {
+        font-size: 24px;
+        color: #b58156;
+        line-height: 25px;
+        font-family: "Alice-Regular";
+      }
+      h2 {
+        position: absolute;
+        top: -20px;
+        font-size: 36px;
+      }
+    }
+    img {
+      object-fit: fill;
+      width: 100%;
+      margin-top: 50px;
+      margin-left: -25px;
+    }
+  }
+  .side-bar-two {
+    background-color: rgb(164, 140, 126);
+    border-top-left-radius: 60px;
+    border-bottom-left-radius: 60px;
+  }
+}
+.space-between-parts {
+  height: 100px;
+}
+/* Footer provided by Svetlin */
+// *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+.info ul li {
+  list-style: none;
+  font-family: "Alice", sans-serif;
+  color: rgb(229, 229, 227);
+  padding-right: 65px;
+  font-size: 18px;
+  line-height: 25px;
+}
+.icon ul li {
+  list-style: none;
+  text-align: center;
+}
+
+.icon ul li img {
+  margin-left: -30px;
+  margin-top: 15px;
+}
+
+footer {
+  margin: 0;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  background-color: rgb(65, 52, 43);
+  padding-top: 75px;
+  padding-bottom: 50px;
+  background-position: center;
+  background-size: 95%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.icon {
+  background-color: rgb(181, 130, 87);
+  border-radius: 30px;
+  width: 55px;
+  height: 125px;
+}
+
+.ig img {
+  margin-top: 15px;
+}
+
+// Nikolay code
+//main page
+* {
+  box-sizing: border-box;
+}
+
+main {
+  max-width: 1920px;
+}
+
+.werapper-rooms-and-apartments {
+  box-sizing: border-box;
+
+  .rooms-and-apartments-title {
+    height: 127px;
+    @include flex;
+    background-color: $background-Color;
+
+    p {
+      text-transform: uppercase;
+      color: $white-text;
+      font-family: $alice-reg-font;
+      font-size: 56px;
+    }
+  }
+  /** veertical border */
+  .wrapper-vertical-border {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2px;
+    margin-bottom: 22px;
+
+    .vertical-border {
+      border-left: 9px solid rgb(173, 151, 136);
+      height: 70px;
+      margin-top: 20px;
+    }
+  }
+  /** rooms-and-apartments */
+  .wrapper-rooms {
+    widows: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    padding-bottom: 146px;
+
+    p {
+      position: absolute;
+      font-size: 22px;
+      font-weight: bolder;
+      margin: 13px 0px 0px 21px;
+    }
+
+    .room-number-border {
+      width: 45px;
+      border: 2px solid black;
+      position: absolute;
+      top: 12px;
+    }
+    .rooms {
+      height: 422px;
+      margin-left: 30px;
+    }
+
+    :link {
+      color: rgb(0, 0, 0);
+    }
+
+    :visited {
+      color: rgb(0, 0, 0);
+    }
+
+    :hover {
+      transform: scale(1.01);
+      transition: transform 1s;
+    }
+  }
+}
+
+// Restaurant and food styling - Todor
+.wrapper-restaurant-and-food {
+  // max-width: 1920px;
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/diagonal-background-smallimgs.png");
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  text-align: center;
+
+  .container {
+    .restaurant-and-food-title {
+      p {
+        text-transform: uppercase;
+        color: #41342b;
+        font-family: $alice-reg-font;
+        font-size: 56px;
+        padding-top: 60px;
+      }
+    }
+    .wrapper-vertical-border {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      .vertical-border {
+        border-left: 9px solid #41342b;
+        height: 70px;
+      }
+    }
+
+    .restaurant-image {
+      height: 860px;
+      max-width: 1260px;
+      border: none;
+
+      background-image: url(../images/restaurant-interior.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .hotel-offer-image-wrapper {
+      max-width: 1260px;
+      height: 324px;
+      display: flex;
+      position: relative;
+      button {
+        width: 170px;
+        height: 40px;
+        font-size: 22px;
+        font-weight: bold;
+        border-radius: 15px;
+        background-color: #ffffff;
+        border: 1px solid #b38355;
+        color: #b38355;
+        box-shadow: 1px 1px 1px #b38355;
+      }
+      .hotel-offer-text {
+        width: 710px;
+        p {
+          padding-right: 10px;
+          font-family: $alice-reg-font;
+          font-size: 22px;
+          color: #3e352e;
+          line-height: 27px;
+        }
+        .hotel-header-bottom-border {
+          h2 {
+            font-family: $alice-reg-font;
+            color: #41342b;
+            margin-top: 5px;
+          }
+        }
+
+        .header-underline {
+          border-bottom: 2px solid #3e352e;
+          width: 90px;
+          margin: 0px auto;
+        }
+      }
+      .shrimps-meal-image {
+        width: 550px;
+        height: 370px;
+        margin-top: -44px;
+        background-image: url("../images/bowl-japanese-seafood-ramen.png");
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
+
+// Sport bar styling -Todor
+.wrapper-sport-bar {
+  .container {
+    .sport-bar-image-wrapper {
+      max-width: 1260px;
+      display: flex;
+      position: relative;
+      .bar-image {
+        width: 710px;
+        height: 410px;
+        background-image: url(../images/new-bare.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+
+        .header-underline {
+          border-bottom: 2px solid #3e352e;
+          width: 90px;
+          margin: 0px auto;
+        }
+      }
+      .bar-description {
+        width: 549.5px;
+        height: 370px;
+        text-align: center;
+        p {
+          padding-top: 90px;
+          font-size: 22px;
+          padding-left: 23px;
+          padding-right: 23px;
+          font-family: $alice-reg-font;
+          color: #3e352e;
+        }
+        // same code as prev button - to do !!!
+        button {
+          width: 170px;
+          height: 40px;
+          font-size: 22px;
+          font-weight: bold;
+          background-color: #ffffff;
+          border-radius: 15px;
+          border: 1px solid #b38355;
+          color: #b38355;
+          box-shadow: 1px 1px 1px #b38355;
+        }
+      }
+    }
+    .soul-pleasure-border-line {
+      width: 680px;
+      border: 1px solid black;
+      background-color: black;
+      margin: 0px auto;
+      margin-top: 50px;
+    }
+    .pleasure-header {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      text-align: center;
+      h2 {
+        font-size: 58px;
+        font-family: "BikhamCyrScript";
+        color: #eda66e;
+      }
+    }
+  }
+}
+
+// FOOTER FROM SVETLIO
+@import url("https://fonts.googleapis.com/css2?family=Alice&display=swap");
+
+.info ul li {
+  list-style: none;
+  font-family: "Alice", sans-serif;
+  color: rgb(229, 229, 227);
+  padding-right: 65px;
+  font-size: 18px;
+  line-height: 25px;
+}
+
+.icon ul li {
+  list-style: none;
+}
+
+footer {
+  margin: 0;
+  max-width: 1920px;
+  display: flex;
+  justify-content: center;
+  height: 250px;
+  background-color: rgb(65, 52, 43);
+  padding-top: 75px;
+  padding-bottom: 50px;
+  // background-position: center;
+  // background-size: 95%;
+  // background-repeat: no-repeat;
+  width: 100%;
+}
+
+.logo {
+  margin-right: 50px;
+}
+
+.icon {
+  background-color: rgb(181, 130, 87);
+  border-radius: 30px;
+  width: 55px;
+  height: 125px;
+}

@@ -1,0 +1,169 @@
+.for-us-title {
+    box-sizing: border-box;
+    height: 130px;
+    background-color: rgb(91, 83, 75, 0.8);
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    font-family: "$alice-reg-font";
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 200px;
+}
+.soffa {
+    position: relative;
+    .title-style {
+        font-size: 96px;
+        font-family: "bikham";
+        color: rgb(231, 155, 100);
+    }
+
+    .text-style {
+        line-height: 1.2;
+        color: rgb(255, 255, 255);
+        font-size: 28px;
+        font-family: "$alice-reg-font";
+    }
+
+    .soffa-photo {
+        background-image: url(../images/foyer-of-the-hotel-with-sofas-2021-08-26-18-25-00-utc.png);
+        width: 165vh;
+        margin-right: 330px;
+        position: relative;
+        right: 33vh;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 1059px;
+        .soffa-content {
+            height: 525px;
+            box-sizing: border-box;
+            background-color: rgb(88, 80, 72);
+            position: absolute;
+            top: 580px;
+            padding-right: 23%;
+            text-align: right;
+            left: 895px;
+            .soffa-content-info {
+                width: 70vh;
+                padding-left: 20px;
+                :first-child {
+                    font-size: 38px;
+                }
+                :last-child {
+                    text-transform: uppercase;
+                }
+            }
+        }
+    }
+    .bedroom {
+        width: 111vh;
+        height: 696px;
+        box-sizing: border-box;
+        background-image: url(../images/Mask-Group-40.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        margin: 0 auto;
+        top: 46px;
+        z-index: 1;
+        position: relative;
+        p {
+            padding-top: 570px;
+            margin-left: -25px;
+        }
+    }
+    .bedroom-content {
+        height: 501px;
+        box-sizing: border-box;
+        background-color: rgb(88, 80, 72);
+        position: absolute;
+        right: 25vh;
+        top: 1660px;
+        padding-left: 100%;
+    }
+
+    .bedroom-content p {
+        padding: 180px 29px 24px 331px;
+        width: 135vh;
+    }
+}
+// rooms-and-apartments
+.about-us {
+    margin-top: 405px;
+}
+.werapper-rooms-and-apartments {
+    box-sizing: border-box;
+    // margin-top: 359px;
+
+    .rooms-and-apartments-title {
+        height: 127px;
+        @include flex;
+        background-color: $background-Color;
+
+        p {
+            text-transform: uppercase;
+            color: $white-text;
+            font-family: "$alice-reg-fon" t;
+            font-size: 56px;
+        }
+    }
+    /** veertical border */
+    .wrapper-vertical-border {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 2px;
+        margin-bottom: 22px;
+
+        .vertical-border {
+            border-left: 9px solid rgb(173, 151, 136);
+            height: 70px;
+            margin-top: 20px;
+        }
+    }
+
+    /** rooms-and-apartments */
+    .wrapper-rooms {
+        widows: 100%;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        padding-bottom: 146px;
+
+        p {
+            position: absolute;
+            font-size: 22px;
+            font-weight: bolder;
+            margin: 13px 0px 0px 21px;
+        }
+
+        .room-number-border {
+            width: 45px;
+            border: 2px solid black;
+            position: absolute;
+            top: 12px;
+        }
+        .rooms {
+            height: 422px;
+            margin-left: 30px;
+            transition: transform 0.3s;
+        }
+
+        :link {
+            color: rgb(0, 0, 0);
+        }
+
+        :visited {
+            color: rgb(0, 0, 0);
+        }
+
+        :hover {
+            transform: scale(1.01);
+            transition: transform 1s;
+        }
+    }
+}

@@ -1,0 +1,128 @@
+ .gallery-main-section{
+  .h2-img-section{
+    max-width: 1920px;
+     height: 550px; //check if the pixels are correct;
+     display: flex;
+     flex-wrap: wrap;
+     position: relative;
+   .moonight-gallery-hotel-spa-section {
+     position: absolute;
+     z-index: 13;
+     width: 850px;
+     height: 150px;
+     top: 200px;
+     background-color: rgb(65, 52, 42, 0.81);
+     text-align: center;
+      .test-border {
+        width: 500px;
+        height: 75px;
+         margin-left: 250px;
+         font-family: "Alice-Regular";
+         text-align: left;
+         position: relative;
+         top: 75px;
+         transform: translateY(-50%);
+         border-bottom: 3px solid #FCCEAD;
+         border-right: 3px solid #FCCEAD;
+         h2 {
+          position: absolute;
+          top: -18px;
+          color: #b58156;
+          font-size: 34px;
+         }
+          .gallery-h3 {
+            position: absolute;
+            top: 20px;
+            color: white;
+            font-size: 34px;
+         }
+          .hotel-and-spa-gallery-title {
+            position: absolute;
+            top: 73px;
+            color: white;
+            letter-spacing: 5px;
+            font-size: 34px;
+        }
+      }
+   }
+   .lobby-img {
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: 1;
+    left: 500px;
+    right: 0px;
+    max-height: 770px;
+     img {
+      width: 100%;
+      height: 100%;
+     }   
+   }
+ }
+ }
+ //border gap, used to be test-border
+  .gallery-content-title::after {
+   content: '';
+   position: absolute;
+   height: 3px;
+   background: #FCCEAD;
+   width: 240px;
+   top: 15px;
+   left: 260px;
+   right: 0;
+ }
+  .gallery {
+    --num-cols: 3;
+    --row-height: 300px;
+    --gap: 15px;
+    box-sizing: border-box;
+    padding: var(--gap);
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols), 1fr);
+    grid-auto-rows: (--row-height);
+    gap: var(--gap);
+  }
+  .gallery > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: baseline;
+    transition:transform 2.0s ease;
+  }
+  .gallery img:hover {
+    -webkit-transform:scale(0.5); /* or some other value */
+    transform: scale(1.5);
+   }
+  .image-grid-col-2 {
+    grid-column: span 2;
+  }
+  .image-grid-row-2 {
+    grid-row: span 2;
+  }
+  @media screen and (max-width: 1024px){
+    .gallery {
+      --num-cols: 2;
+      --row-height: 200px;
+    }
+  }
+
+  .first-four-images {
+    .item {
+      margin: 10px;
+    }
+    img:hover {
+      -webkit-transform:scale(0.5); /* or some other value */
+      transform: scale(1.5);
+      transition:transform 2.0s ease;
+     }
+    .right-side {
+      width: 70px;
+      height: 1000px;
+      position: absolute;
+      z-index: 2;
+      top: 550px;
+      right: 129px;
+      background-color: rgb(65, 52, 42, 0.81);
+    }
+  }
+  
+  
